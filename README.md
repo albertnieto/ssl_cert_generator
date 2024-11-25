@@ -173,6 +173,3 @@ Provide a clear description of the changes and any relevant context.
 ## License
 
 This project is licensed under the [Apache-2.0 license](LICENSE).
-
----
-*Feel free to customize this README to better fit your project's specific needs and configurations.*
