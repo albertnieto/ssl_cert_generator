@@ -1,0 +1,25 @@
+[project]
+name = "ssl_cert_generator"
+version = "0.1.0"
+description = "A tool for generating RSA private keys, CSRs, and comparing public keys."
+authors = [
+    { name = "Albert Nieto", email = "nietom.albert@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "Apache-2.0"}
+keywords = ["ssl", "certificates", "csr", "rsa", "cryptography"]
+dependencies = [
+    "cryptography>=38.0.0",
+]
+
+[project.scripts]
+generate_csr = "ssl_cert_generator.generate_csr:main"
+compare_keys = "ssl_cert_generator.compare_keys:main"
+
+[project.urls]
+Homepage = "https://github.com/albertnieto/ssl_cert_generator"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
